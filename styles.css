@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  h2 {
+      padding: 10px 10px 10px 10px;
+  }
+
+body {
+  background-color: black;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: black;
+}
+
+header img {
+    height: 50px;
+    width: auto;
+    padding-left: 10px;
+}
+
+header ul {
+    display: inline-block;
+    min-width: 300px;
+}
+
+header li {
+    display: inline-block;
+    text-decoration: underline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a {
+    color: seashell;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner {
+    height: 700px;
+    background-image: url(Images/img-mission-background.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    margin-top: 110px;
+}
+
+.lema {
+    background-color: black;
+    max-width: 1200px;
+    padding: 10px;
+}
+
+.suggestion {
+    max-width: 1000px;
+    height: auto;
+    margin-top: 40px;
+    
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card img {
+    height: 200px;
+    width: 300px;
+    padding: 10px 10px 10px 10px;
+}
+
+.locations {
+    background-image: url(Images/img-locations-background.jpg);
+    background-repeat: no-repeat;
+    min-height: 500px;
+    width: auto;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 656px) {
+    .locations, .banner {
+      background-attachment: fixed;
+    }
+  }
+
+.locations h2 {
+    padding-top: 54px;
+    padding-bottom: 15px;
+}
+
+.cards2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards2 .card {
+    background-color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 300px;
+    flex-basis: 280px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+.cards2 .card h3, .cards2 .card p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.contact {
+    height: 200px;
+    width: auto;
+    margin-top: 40px;
+}
+
+footer {
+    text-align: left;
+    align-self: flex-start;
+    padding-left: 20px;
+}
